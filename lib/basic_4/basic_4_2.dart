@@ -48,10 +48,10 @@ class _MainPageState extends State<MainPage> {
 
 class TabPage extends StatelessWidget {
 
-  final IconData icon;
-  final String title;
+  final IconData? icon;
+  final String? title;
 
-  const TabPage({required Key key, required this.icon, required this.title}) : super(key: key);
+  const TabPage({Key? key, this.icon, this.title}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +61,7 @@ class TabPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Icon(icon, size: 72.0, color: textStyle?.color),
-          Text(title, style: textStyle),
+          Text(title!, style: textStyle),
         ],
       ),
     );
