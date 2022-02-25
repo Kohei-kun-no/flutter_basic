@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(
-              title: Text("My Simple App"),
+              title: Text("KoheiSample"),
             ),
             body: Stack(  // 重ねて表示
               children: <Widget>[
